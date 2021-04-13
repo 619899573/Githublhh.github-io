@@ -430,10 +430,10 @@
   ;
 
 NexT.utils.loadComments('#waline-comments', () => {
-  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js', () => {
     new Waline(Object.assign({
       lang: 'zh-CN'
-    }, {"enable":true,"serverURL":"https://waline.vercel.app","placeholder":"Just go go","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick","mail"],"lang":"zh-cn","libUrl":null}, {
+    }, {"enable":true,"serverURL":"https://waline.vercel.app","placeholder":"Just go go","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick","mail"],"appid":"j87zAiklp5ccllbW2xPvK4cc-gzGzoHsz","appkey":"rhr8tFTskqC1JraxE6L9BtvJ","lang":"zh-cn","libUrl":"https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js"}, {
       el: '#waline-comments',
       path: "/archives/",
     }));
