@@ -481,7 +481,7 @@
         });
     }
 
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"j87zAiklp5ccllbW2xPvK4cc-gzGzoHsz","app_key":"rhr8tFTskqC1JraxE6L9BtvJ","server_url":"https://j87zaikl.lc-cn-n1-shared.com","security":true};
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"j87zAiklp5ccllbW2xPvK4cc-gzGzoHsz","app_key":"rhr8tFTskqC1JraxE6L9BtvJ","server_url":"https://henfy233.github.io/","security":true};
     function fetchData(api_server) {
       const Counter = (method, url, data) => {
         return fetch(`${api_server}/1.1${url}`, {
@@ -520,7 +520,7 @@ NexT.utils.loadComments('#waline-comments', () => {
   NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js', () => {
     new Waline(Object.assign({
       lang: 'zh-CN'
-    }, {"enable":true,"serverURL":"https://waline.vercel.app","placeholder":"Just go go","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":[],"LEAN_ID":"j87zAiklp5ccllbW2xPvK4cc-gzGzoHsz","LEAN_KEY":"rhr8tFTskqC1JraxE6L9BtvJ","LEAN_MASTER_KEY":"giw366gVPSrQLndvPH3RYbi4","lang":"zh-cn","libUrl":null}, {
+    }, {"enable":true,"serverURL":"https://waline.vercel.app","placeholder":"Just go go","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":"zh-cn","libUrl":null}, {
       el: '#waline-comments',
       path: "/archives/2021/",
     }));
