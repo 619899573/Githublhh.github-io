@@ -24,12 +24,10 @@
     <content><![CDATA[<p>I just want to test</p>
 ]]></content>
       <categories>
-        <category>Java分类</category>
-        <category>Java分类的二级菜单</category>
+        <category>AI</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
+        <tag>tensorflow</tag>
       </tags>
   </entry>
 </search>
