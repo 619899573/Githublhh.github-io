@@ -51,7 +51,7 @@
     isPost : false,
     lang   : 'zh-CN'
   };
-</script>
+</script><link rel="dns-prefetch" href="https://waline.vercel.app">
 <title>about | Henfy-Blog
 </title>
   
@@ -235,16 +235,9 @@
   </div>
 
 
-  <div class="links-of-blogroll site-overview-item animated">
-    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
-      Links
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://github.com/henfy233" title="https://github.com/henfy233" rel="noopener" target="_blank">Github</a>
-        </li>
-    </ul>
-  </div>
+<div class="cc-license animated" itemprop="sponsor">
+  <a href="https://www.netlify.com" class="cc-opacity" title="Deploy with Netlify → https://www.netlify.com" target="_blank"><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></a>
+</div>
 
         </div>
       </div>
@@ -299,6 +292,7 @@
     
 
 
+    <div class="comments" id="waline-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -341,13 +335,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
@@ -559,4 +553,16 @@ if (mermaidElements.length) {
         ignores : [uri => uri.includes('#'),uri => uri === 'http://example.com/about/',]
       });
       });
-  </script></body></html>
+  ;
+
+NexT.utils.loadComments('#waline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js', () => {
+    new Waline(Object.assign({
+      lang: 'zh-CN'
+    }, {"enable":true,"serverURL":"https://waline.vercel.app","placeholder":"Just go go","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":"zh-cn","libUrl":"https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js"}, {
+      el: '#waline-comments',
+      path: "/about/",
+    }));
+  }, window.Waline);
+});
+</script></body></html>

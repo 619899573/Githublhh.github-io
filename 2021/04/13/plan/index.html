@@ -34,7 +34,7 @@
 <meta property="og:description" content="Welcome to my site! This is my plan. I write it to improve my efficiency.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-13T13:24:09.000Z">
-<meta property="article:modified_time" content="2021-04-17T01:16:57.355Z">
+<meta property="article:modified_time" content="2021-04-17T03:08:13.542Z">
 <meta property="article:author" content="henfy">
 <meta property="article:tag" content="plan">
 <meta name="twitter:card" content="summary">
@@ -51,7 +51,7 @@
     isPost : true,
     lang   : 'zh-CN'
   };
-</script>
+</script><link rel="dns-prefetch" href="https://waline.vercel.app">
 <title>plan | Henfy-Blog</title>
   
 
@@ -235,16 +235,9 @@
   </div>
 
 
-  <div class="links-of-blogroll site-overview-item animated">
-    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
-      Links
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <a href="https://github.com/henfy233" title="https://github.com/henfy233" rel="noopener" target="_blank">Github</a>
-        </li>
-    </ul>
-  </div>
+<div class="cc-license animated" itemprop="sponsor">
+  <a href="https://www.netlify.com" class="cc-opacity" title="Deploy with Netlify → https://www.netlify.com" target="_blank"><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></a>
+</div>
 
         </div>
       </div>
@@ -309,7 +302,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-17 09:16:57" itemprop="dateModified" datetime="2021-04-17T09:16:57+08:00">2021-04-17</time>
+        <time title="修改时间：2021-04-17 11:08:13" itemprop="dateModified" datetime="2021-04-17T11:08:13+08:00">2021-04-17</time>
       </span>
 
   
@@ -320,6 +313,8 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span class="leancloud-visitors-count"></span>
     </span>
+  
+  
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -327,7 +322,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>168</span>
+      <span>363</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -348,12 +343,23 @@
         <p>Welcome to my site! This is my plan. I write it to improve my efficiency.</p>
 <span id="more"></span>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="pie"><a href="#pie" class="headerlink" title="pie"></a>pie</h3><pre class="mermaid">graph TD
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="pie"><a href="#pie" class="headerlink" title="pie"></a>pie</h3><pre class="mermaid">pie
+"Dogs" : 386
+"Cats" : 85
+"Rats" : 15
+</pre>
+
+<pre class="mermaid">graph TD
 A[Hard] --&gt;|Text| B(Round)
 B --&gt; C{Decision}
 C --&gt;|One| D[Result 1]
 C --&gt;|Two| E[Result 2]
 </pre>
+
+<p>我来解释下为啥不能用吧,原来这mermaid东西需要在下面加一条代码才可以运行，好坑爹呀</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">'Hello World'</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<div class="tabs" id="sixth-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#sixth-unique-name-1"><i class="fa fa-text-width"></i>Solution 1</a></li><li class="tab"><a href="#sixth-unique-name-2"><i class="fa fa-font"></i>Solution 2</a></li><li class="tab"><a href="#sixth-unique-name-3"><i class="fa fa-bold"></i>Solution 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="sixth-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="sixth-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="sixth-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
 
 
 
@@ -452,13 +458,13 @@ C --&gt;|Two| E[Result 2]
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">10k</span>
+    <span title="站点总字数">11k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">9 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.js.org/mist/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
@@ -670,4 +676,16 @@ if (mermaidElements.length) {
         ignores : [uri => uri.includes('#'),uri => uri === 'http://example.com/2021/04/13/plan/',]
       });
       });
-  </script></body></html>
+  ;
+
+NexT.utils.loadComments('#waline-comments', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js', () => {
+    new Waline(Object.assign({
+      lang: 'zh-CN'
+    }, {"enable":true,"serverURL":"https://waline.vercel.app","placeholder":"Just go go","avatar":"monsterid","meta":["nick","mail","link"],"pageSize":10,"visitor":false,"comment_count":true,"requiredFields":["nick","mail"],"lang":"zh-cn","libUrl":"https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js"}, {
+      el: '#waline-comments',
+      path: "/2021/04/13/plan/",
+    }));
+  }, window.Waline);
+});
+</script></body></html>
